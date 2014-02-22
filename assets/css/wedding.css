@@ -1,0 +1,76 @@
+/*wedding css overrides*/
+body {
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-align:center;
+  line-height: 1.42857143;
+  color: #333;
+}
+/*body {font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; }*/
+* {margin: 0px; padding:0px;
+box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform:
+  uppercase;margin-top:30px;}
+
+h1 {font-size:36px;margin-top:25px;}
+h2 {font-size:30px;margin-top:50px}
+
+.hide {display:none;}
+.container {width:100%;
+  clear:left;
+  max-width: 600px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0 5px 0 5px;
+}
+.imagetitle {position:relative; width:100%;margin:30px 0 20px 0;}
+
+.imagetitle h2 {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height:30px;}
+.imagetitle h2 span {
+   color: white;
+   font-weight:normal;
+   letter-spacing: 0px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   border-radius:4px;
+}
+/*.imagetitle img {vertical-align:middle;}
+*/
+p { margin: 10px 0 10px 0; }
+
+a { color:#555;}
+
+img {width:100%; border-radius:4px;}
+img.round {border-radius:50%;margin-top:20px;max-width:400px;}
+
+.navbar-header {background-color: #e7e7e7;padding:3px;border-bottom:2px #d7d7d7;}
+
+.maple-shade {background-image:url(http://www.mapleshadefarmny.com/wp-content/uploads/2012/08/slider3.jpg);
+ min-height:300px;
+ }
+.clear {clear:both;}
+
+.nav {width:100%; text-align:center;}
+ul.nav {padding:0px;margin-left:auto;margin-right:auto;}
+.nav li { float:left;display:block; padding:5px;}
+.nav li a { text-decoration: none; color:#555; font-weight:normal;}
+
+
+
+@media only screen and (max-width: 480px) {
+  /*h1 { font-size: 1.2em;}
+  h2 { font-size: 1.0em;}*/
+
+  .navbar {display:none;}
+  /* iPhone, Android rules here */
+}
