@@ -19,11 +19,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {font-size:36px;margin-top:25px;}
 h2 {font-size:30px;margin-top:50px}
+h4 {font-weight:bold;}
 
 .hide {display:none;}
 .container {width:100%;
   clear:left;
-  max-width: 600px;
+  max-width: 660px;
   margin-left:auto;
   margin-right:auto;
   padding: 0 5px 0 5px;
@@ -34,7 +35,10 @@ h2 {font-size:30px;margin-top:50px}
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  height:30px;}
+  line-height:1.0;
+  padding:0;
+  height:30px;
+}
 .imagetitle h2 span {
    color: white;
    font-weight:normal;
@@ -73,4 +77,10 @@ ul.nav {padding:0px;margin-left:auto;margin-right:auto;}
 
   .navbar {display:none;}
   /* iPhone, Android rules here */
+}
+
+@media only screen and (max-device-width: 480px) {
+  /** iPhone Only */
+  .imagetitle h2 span { padding-top:14px;}
+
 }
