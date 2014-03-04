@@ -10,7 +10,7 @@ build:
 	cp vendor/lightbox2/js/jquery-1.10.2.min.js  assets/js
 	cp vendor/lightbox2/js/lightbox-2.6.min.js assets/js
 
-publish: build
+publish:
 	rsync -rav --exclude vendor --exclude .git . dpitawedding.com:dpitawedding.com
 
 watch:
