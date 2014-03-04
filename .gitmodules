@@ -1,0 +1,3 @@
+[submodule "vendor/lightbox2"]
+	path = vendor/lightbox2
+	url = git@github.com:lokesh/lightbox2.git

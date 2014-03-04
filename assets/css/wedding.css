@@ -18,11 +18,13 @@ h1, h2, h3, h4, h5, h6 {
   uppercase;margin-top:30px;}
 
 h1 {font-size:32px;margin-top:15px;}
+
 h2 {font-size:28px;margin-top:50px}
 h3 {font-weight:bold;}
 h4 {font-weight:bold;text-decoration:underline;}
 
-.hide {display:none;}
+.hide {display:none!important;}
+.nopad {padding:0px!important;margin:0px!important;}
 .container {width:100%;
   clear:left;
   max-width: 660px;
@@ -57,6 +59,8 @@ a { color:#555;}
 
 img {width:100%; border-radius:4px;}
 img.round {border-radius:50%;margin-top:20px;max-width:400px;}
+
+
 
 .navbar-header {background-color: #333;padding:3px;border-bottom:2px #e7e7e7;}
 
@@ -102,6 +106,17 @@ img.round {border-radius:50%;margin-top:20px;max-width:400px;}
   padding:6px 10px;
 }
 
+/*gallery page*/
+.gallery img { max-width:300px;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+.gallery .image {margin-top:10px;}
+.gallery h1 { margin-bottom:25px;}
+.gallery .image a {text-decoration:none;}
+.gallery h1 small {font-size:12px;}
+
 
 @media only screen and (max-width: 700px) {
   .nav li a {font-size:14px;}
@@ -117,6 +132,10 @@ img.round {border-radius:50%;margin-top:20px;max-width:400px;}
 }
 @media only screen and (max-width: 500px) {
   .navbar {display:none;}
+}
+
+@media only screen and (min-width: 640px) {
+  .gallery .image {float:left;margin-left:10px;}
 }
 
 
