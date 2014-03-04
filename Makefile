@@ -4,4 +4,4 @@ watch:
 	python -mSimpleHTTPServer
 
 publish:
-	rsync -rav . dpitawedding.com:dpitawedding.com
+	rsync -rav --exclude .git . dpitawedding.com:dpitawedding.com

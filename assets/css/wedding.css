@@ -17,9 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform:
   uppercase;margin-top:30px;}
 
-h1 {font-size:36px;margin-top:25px;}
-h2 {font-size:30px;margin-top:50px}
-h4 {font-weight:bold;}
+h1 {font-size:32px;margin-top:15px;}
+h2 {font-size:28px;margin-top:50px}
+h3 {font-weight:bold;}
+h4 {font-weight:bold;text-decoration:underline;}
 
 .hide {display:none;}
 .container {width:100%;
@@ -57,24 +58,71 @@ a { color:#555;}
 img {width:100%; border-radius:4px;}
 img.round {border-radius:50%;margin-top:20px;max-width:400px;}
 
-.navbar-header {background-color: #e7e7e7;padding:3px;border-bottom:2px #d7d7d7;}
+.navbar-header {background-color: #333;padding:3px;border-bottom:2px #e7e7e7;}
 
 .maple-shade {background-image:url(http://www.mapleshadefarmny.com/wp-content/uploads/2012/08/slider3.jpg);
  min-height:300px;
  }
 .clear {clear:both;}
 
-.nav {width:100%; text-align:center;}
-ul.nav {padding:0px;margin-left:auto;margin-right:auto;}
-.nav li { float:left;display:block; padding:5px;}
-.nav li a { text-decoration: none; color:#555; font-weight:normal;}
+.nav {padding:0px;margin-left:auto;margin-right:auto;}
+.nav li { float:left;display:block; padding:10px;}
+.nav li a { text-decoration: none; color:#eee; font-weight:500;}
 
+.navbar.centered {
+   float:left;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+   margin-bottom:15px;
+}
+.navbar.centered .nav {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+.navbar.centered .nav li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+.navbar.centered .nav li a {
+  display:block;
+  margin:0 0 0 1px;
+  padding:6px 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .nav li a {font-size:14px;}
+}
+@media only screen and (max-width: 630px) {
+  .nav li a {font-size:12px;}
+}
+@media only screen and (max-width: 630px) {
+  .nav li a {font-size:12px;}
+}
+@media only screen and (max-width: 560px) {
+  .nav li a {font-size:10px;}
+}
+@media only screen and (max-width: 500px) {
+  .navbar {display:none;}
+}
 
 
 @media only screen and (max-width: 480px) {
   /*h1 { font-size: 1.2em;}
   h2 { font-size: 1.0em;}*/
-
   .navbar {display:none;}
   /* iPhone, Android rules here */
 }
