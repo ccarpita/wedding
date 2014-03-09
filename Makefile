@@ -1,9 +1,10 @@
-.PHONY: watch publish
+.PHONY: setup build watch publish
 
 setup:
+	git submodule init
 	git submodule update
 
-build:
+build: setup
 	cp vendor/lightbox2/img/*.png assets/img
 	cp vendor/lightbox2/img/loading.gif assets/img
 	cp vendor/lightbox2/css/*.css assets/css
