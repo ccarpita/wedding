@@ -27,6 +27,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.post('/update', routes.update);
 app.get('/update', routes.update);
 
 http.createServer(app).listen(app.get('port'), function(){

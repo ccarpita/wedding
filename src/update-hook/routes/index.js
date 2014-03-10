@@ -1,7 +1,10 @@
 
 var exec = require('child_process').exec;
 var config = require('../config');
-
+var log = function(message) {
+  var now = new Date().toISOString();
+  console.log(now + ' ' + message);
+};
 /*
  * GET /update 
  */
@@ -16,14 +19,17 @@ exports.update = function(req, res){
 
   var onComplete = function() {
     var end = Date.now();
+    var now = new Date().toISOString();
+    log('Updated');
     res.send({
-      'updated': Date.now(),
+      'updated': now,
       'elapsed': end - start
     });
     updating = false;
   };
 
   var onError = function(err) {
+    log('Error: ' + err);
     res.send({'error': err});
     updating = false;
   };
