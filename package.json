@@ -1,0 +1,7 @@
+{
+  "name": "dpita-wedding",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "~3.5.0"
+  }
+}

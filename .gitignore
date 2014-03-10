@@ -1,8 +1,9 @@
-assets/css/lightbox.css
-assets/css/screen.css
-assets/img/close.png
-assets/img/next.png
-assets/img/prev.png
-assets/img/loading.gif
-assets/js/jquery*.js
-assets/js/lightbox*.js
+node_modules
+src/public/assets/css/lightbox.css
+src/public/assets/css/screen.css
+src/public/assets/img/close.png
+src/public/assets/img/next.png
+src/public/assets/img/prev.png
+src/public/assets/img/loading.gif
+src/public/assets/js/jquery*.js
+src/public/assets/js/lightbox*.js
