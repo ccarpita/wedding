@@ -1,0 +1,153 @@
+/*wedding css overrides*/
+body {
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-align:center;
+  line-height: 1.42857143;
+  color: #333;
+}
+/*body {font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; }*/
+* {margin: 0px; padding:0px;
+box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform:
+  uppercase;margin-top:30px;}
+
+h1 {font-size:32px;margin-top:15px;}
+
+h2 {font-size:28px;margin-top:50px}
+h3 {font-weight:bold;}
+h4 {font-weight:bold;text-decoration:underline;}
+
+.hide {display:none!important;}
+.nopad {padding:0px!important;margin:0px!important;}
+.container {width:100%;
+  clear:left;
+  max-width: 660px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0 5px 0 5px;
+}
+.imagetitle {position:relative; width:100%;margin:30px 0 20px 0;}
+
+.imagetitle h2 {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  line-height:1.0;
+  padding:0;
+  height:30px;
+}
+.imagetitle h2 span {
+   color: white;
+   font-weight:normal;
+   letter-spacing: 0px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   border-radius:4px;
+}
+/*.imagetitle img {vertical-align:middle;}
+*/
+p { margin: 10px 0 10px 0; }
+
+a { color:#555;}
+
+img {width:100%; border-radius:4px;}
+img.round {border-radius:50%;margin-top:20px;max-width:400px;}
+
+
+
+.navbar-header {background-color: #333;padding:3px;border-bottom:2px #e7e7e7;}
+
+.maple-shade {background-image:url(http://www.mapleshadefarmny.com/wp-content/uploads/2012/08/slider3.jpg);
+ min-height:300px;
+ }
+.clear {clear:both;}
+
+.nav {padding:0px;margin-left:auto;margin-right:auto;}
+.nav li { float:left;display:block; padding:10px;}
+.nav li a { text-decoration: none; color:#eee; font-weight:500;}
+
+.navbar.centered {
+   float:left;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+   margin-bottom:15px;
+}
+.navbar.centered .nav {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+.navbar.centered .nav li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+.navbar.centered .nav li a {
+  display:block;
+  margin:0 0 0 1px;
+  padding:6px 10px;
+}
+
+/*gallery page*/
+.gallery img { max-width:300px;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+.gallery .image {margin-top:10px;}
+.gallery h1 { margin-bottom:25px;}
+.gallery .image a {text-decoration:none;}
+.gallery h1 small {font-size:12px;}
+
+
+@media only screen and (max-width: 700px) {
+  .nav li a {font-size:14px;}
+}
+@media only screen and (max-width: 630px) {
+  .nav li a {font-size:12px;}
+}
+@media only screen and (max-width: 630px) {
+  .nav li a {font-size:12px;}
+}
+@media only screen and (max-width: 560px) {
+  .nav li a {font-size:10px;}
+}
+@media only screen and (max-width: 500px) {
+  .navbar {display:none;}
+}
+
+@media only screen and (min-width: 640px) {
+  .gallery .image {float:left;margin-left:10px;}
+}
+
+
+@media only screen and (max-width: 480px) {
+  /*h1 { font-size: 1.2em;}
+  h2 { font-size: 1.0em;}*/
+  .navbar {display:none;}
+  /* iPhone, Android rules here */
+}
+
+@media only screen and (max-device-width: 480px) {
+  /** iPhone Only */
+  .imagetitle h2 span { padding-top:14px;}
+
+}
