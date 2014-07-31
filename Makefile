@@ -15,7 +15,7 @@ publish:
 	rsync -rav --exclude vendor --exclude .git . dpitawedding.com:dpitawedding.com
 
 watch:
-	python -mSimpleHTTPServer
+	cd src/public && python -mSimpleHTTPServer 8000
 
 update-hook:
 	node src/update-hook/app.js 1>/var/log/dpitawedding/update-hook.log 2> /var/log/dpitawedding/update-hook.err.log </dev/null &
